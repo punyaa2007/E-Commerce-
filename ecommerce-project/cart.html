@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart – ShopEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav id="main-nav"></nav>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>🛒 Shopping Cart</h1>
+        <p>Review your items and proceed to checkout</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="cart-layout">
+        <!-- Cart items rendered by cart.js -->
+        <div id="cart-container">
+          <div style="text-align:center;padding:60px;color:var(--text-muted)">Loading cart...</div>
+        </div>
+
+        <!-- Summary rendered by cart.js -->
+        <div id="cart-summary" style="display:none;"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2024 ShopEase. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

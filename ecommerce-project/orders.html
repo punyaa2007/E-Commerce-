@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Orders – ShopEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav id="main-nav"></nav>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>📦 My Orders</h1>
+        <p>Track and manage your orders</p>
+      </div>
+    </div>
+
+    <div class="container orders-page-content">
+      <!-- Order confirmation banner (shown after checkout redirect) -->
+      <div id="confirm-banner" style="display:none;"></div>
+
+      <!-- Orders rendered by orders.js -->
+      <div id="orders-container">
+        <div style="text-align:center;padding:60px;color:var(--text-muted)">Loading orders...</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2024 ShopEase. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/orders.js"></script>
+</body>
+</html>

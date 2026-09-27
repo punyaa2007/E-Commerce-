@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase – Your One-Stop Online Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="main-nav"></nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>Shop <span>Smarter</span>,<br>Live Better</h1>
+        <p>Discover thousands of products at unbeatable prices. Free shipping on orders over $50.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn btn-white">Shop Now →</a>
+          <a href="register.html" class="btn btn-outline-white">Get Started Free</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>10K+</strong><span>Products</span></div>
+          <div class="hero-stat"><strong>50K+</strong><span>Happy Customers</span></div>
+          <div class="hero-stat"><strong>4.9★</strong><span>Avg Rating</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section style="background: var(--surface);">
+      <div class="container">
+        <h2 class="section-title">Shop by <span>Category</span></h2>
+        <div class="categories-grid">
+          <div class="cat-card" onclick="location.href='products.html?category=Electronics'">
+            <div class="cat-icon">💻</div>
+            <h3>Electronics</h3>
+            <p>Gadgets & tech</p>
+          </div>
+          <div class="cat-card" onclick="location.href='products.html?category=Clothing'">
+            <div class="cat-icon">👕</div>
+            <h3>Clothing</h3>
+            <p>Fashion & style</p>
+          </div>
+          <div class="cat-card" onclick="location.href='products.html?category=Books'">
+            <div class="cat-icon">📚</div>
+            <h3>Books</h3>
+            <p>Knowledge & fiction</p>
+          </div>
+          <div class="cat-card" onclick="location.href='products.html?category=Home'">
+            <div class="cat-icon">🏠</div>
+            <h3>Home</h3>
+            <p>Comfort & décor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section>
+      <div class="container">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px;">
+          <h2 class="section-title" style="margin:0">Featured <span>Products</span></h2>
+          <a href="products.html" class="btn btn-outline">View All Products →</a>
+        </div>
+        <div class="featured-grid" id="featured-grid">
+          <!-- Populated by products.js -->
+          <div class="skeleton-grid" style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-muted)">Loading products...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section>
+      <div class="container">
+        <div class="promo-banner">
+          <div>
+            <h2>🚚 Free Shipping Over $50!</h2>
+            <p>Add more items to qualify for free standard delivery on your order.</p>
+          </div>
+          <a href="products.html" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">🛍️ ShopEase</div>
+          <p>Your trusted online shopping destination for quality products at great prices.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="products.html">All Products</a>
+          <a href="products.html?category=Electronics">Electronics</a>
+          <a href="products.html?category=Clothing">Clothing</a>
+          <a href="products.html?category=Books">Books</a>
+          <a href="products.html?category=Home">Home</a>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+          <a href="orders.html">My Orders</a>
+          <a href="cart.html">Cart</a>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <a href="#">FAQ</a>
+          <a href="#">Shipping Info</a>
+          <a href="#">Returns</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 ShopEase. All rights reserved. Made with ❤️ using HTML, CSS & Vanilla JS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

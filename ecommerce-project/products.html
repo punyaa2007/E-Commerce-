@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products – ShopEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav id="main-nav"></nav>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Our Products</h1>
+        <p>Explore our wide selection of quality products</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="products-layout">
+          <!-- Sidebar Filters -->
+          <aside class="filters-sidebar">
+            <h3>Filters</h3>
+
+            <div class="filter-group">
+              <label>Category</label>
+              <div id="category-list">
+                <!-- Populated by products.js -->
+                <button class="cat-btn active" data-cat="All">All</button>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <label>Category (dropdown)</label>
+              <select id="category-filter" class="form-control">
+                <option value="All">All Categories</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label>Sort By</label>
+              <select id="sort-select" class="form-control">
+                <option value="default">Default</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A–Z</option>
+              </select>
+            </div>
+
+            <button class="btn btn-outline btn-block" onclick="clearFilters()" style="margin-top:8px;">
+              Clear Filters
+            </button>
+          </aside>
+
+          <!-- Products -->
+          <div>
+            <div class="products-header">
+              <div class="search-wrap">
+                <input type="text" id="search-input" class="form-control"
+                       placeholder="Search products...">
+              </div>
+              <span id="results-count" class="results-count"></span>
+            </div>
+            <div class="products-grid" id="products-grid">
+              <div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-muted)">Loading products...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2024 ShopEase. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
